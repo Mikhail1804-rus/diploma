@@ -1,5 +1,6 @@
 @import "/src/styles/flex";
 @import "/src/styles/text";
+@import "/src/styles/variables";
 
 .courses {
   @extend %mainBlock;
@@ -14,6 +15,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     gap: 20px;
+
+    @media (max-width: $screen-md) {
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    @media (max-width: 540px) {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
   }
 }
 
@@ -33,6 +42,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+
+    @media (max-width: $screen-md) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -59,6 +72,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: $screen-md) {
+    display: none;
+  }
 
   &__image {
     width: 100%;
