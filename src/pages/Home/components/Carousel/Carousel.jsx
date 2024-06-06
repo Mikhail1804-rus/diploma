@@ -20,7 +20,7 @@ function Carousel(props) {
             >
                 {
                     slidesImages.length && slidesImages.map(image => (
-                        <SwiperSlide key={image} className={s.swiper__slide}><img src={"/src/assets/" + image} alt="slide"/></SwiperSlide>
+                        <SwiperSlide key={image} className={s.swiper__slide}><img src={"/public/assets/" + image} alt="slide"/></SwiperSlide>
                     ))
                 }
             </Swiper>

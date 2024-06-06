@@ -15,7 +15,7 @@ function WhyUs(props) {
                     whyUsItems.length && whyUsItems.map((item) => (
                         <div className={s.option}>
                             <div className={s.option__image}>
-                                <img src={"/src/assets/" + item.image} alt="img"/>
+                                <img src={"/public/assets/" + item.image} alt="img"/>
                             </div>
                             <div className={s.option__body}>
                                 <div className={s.option__title}>{item.title}</div>

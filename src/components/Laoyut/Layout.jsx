@@ -7,7 +7,7 @@ function Layout(props) {
         <div className={styles.layout}>
             <header className={styles.header}>
                     <div className={styles.info}>
-                        <img className={styles.info__logo} src="/src/assets/logo.png" width="100" alt="Лого"/>
+                        <img className={styles.info__logo} src="/public/assets/logo.png" width="100" alt="Лого"/>
                         <h1 className={styles.info__title}>Учебный центр "Интеллект"</h1>
                     </div>
 
