@@ -13,7 +13,7 @@ function WhyUs(props) {
             <div className={s.whyUs__options}>
                 {
                     whyUsItems.length && whyUsItems.map((item) => (
-                        <div className={s.option}>
+                        <div key={item.title} className={s.option}>
                             <div className={s.option__image}>
                                 <img src={item.image} alt="img"/>
                             </div>

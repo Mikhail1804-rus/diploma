@@ -30,7 +30,7 @@ function Reviews(props) {
             >
                 {
                     reviews.length && reviews.map(review => (
-                        <SwiperSlide className={s.swiper__slide}>
+                        <SwiperSlide key={review.name} className={s.swiper__slide}>
                             <div className={s.reviewItem}>
                                 <div className={s.reviewItem__avatar}>
                                     <img src={review.image} alt=""/>

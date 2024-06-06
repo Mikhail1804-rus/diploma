@@ -11,7 +11,7 @@ function Courses (props) {
             <div className={s.courses__content}>
                 {
                     courses.length && courses.map(course => (
-                        <div className={s.course}>
+                        <div key={course.title} className={s.course}>
                             <h3 className={s.course__title}>{course.title}</h3>
                             <div className={s.course__content}>
                                 <div className={s.info}>

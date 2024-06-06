@@ -18,7 +18,7 @@ function Timesheet(props) {
                     </div>
                     {
                         timesheet.length && timesheet.map((item) => (
-                            <div className={s.table__row}>
+                            <div key={item.name} className={s.table__row}>
                                 <div>{item.name}</div>
                                 <div>
                                     {item.dates.length && item.dates.map((date, index) => {
@@ -27,7 +27,7 @@ function Timesheet(props) {
                                             return date + ', '
                                         }
 
-                                        return <span>{mappedDate}</span>
+                                        return <span key={mappedDate}>{mappedDate}</span>
                                     })}
                                 </div>
                                 <div>{item.time}</div>
