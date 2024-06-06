@@ -27,7 +27,7 @@ function Contacts(props) {
                 <div className={s.contacts__map}>
                     <iframe
                         src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa43057bfe2cd0a059030be4976e22034e66f774aadc317858377720935d84ae0&amp;source=constructor"
-                        width="600" height="500" frameBorder="0"></iframe>
+                        className={s.contacts__iframe} frameBorder="0"></iframe>
                 </div>
             </div>
         </section>
