@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: min(80vw, 800px);
+
+  &__title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__textarea {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--blue);
+    outline: unset;
+  }
+
+  &__checkbox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  &__button  {
+    width: fit-content;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: unset;
+    cursor: pointer;
+    border: 1px solid var(--blue);
+
+    &:hover {
+      background-color: var(--white);
+      color: var(--blue);
+    }
+  }
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+
+  &__item {
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--blue);
+    outline: none;
+  }
+}

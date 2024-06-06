@@ -1,0 +1,1 @@
+export const slidesImagesData = ['rrr2.jpg', 'ss5.jpg', 'gg3.png']

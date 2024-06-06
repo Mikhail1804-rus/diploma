@@ -1,0 +1,46 @@
+@import "/src/styles/text";
+@import "/src/styles/flex";
+
+.timesheet {
+  @extend %mainBlock;
+
+  &__title {
+    @extend %mainTitle;
+  }
+
+  &__content {
+    @extend %smallBlock;
+  }
+}
+
+.date {
+  @extend %semiTitle;
+  color: var(--black);
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+
+  &__header, &__row {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+
+  &__header {
+    @extend %boldText;
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue);
+    padding: 16px 8px;
+  }
+
+  &__row {
+    color: var(--black);
+  padding: 16px;
+
+    &:nth-child(odd) {
+      background-color: var(--blue);
+      color: var(--white);
+    }
+  }
+}

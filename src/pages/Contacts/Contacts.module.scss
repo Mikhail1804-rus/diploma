@@ -1,0 +1,42 @@
+@import '/src/styles/text';
+@import '/src/styles/flex';
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__title {
+    @extend %mainTitle;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 40px;
+  }
+
+  &__info {
+    @extend %semiBlock;
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+    padding: 16px 12px;
+    border-radius: 20px;
+    color: var(--white);
+  }
+
+  &__map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.info {
+  @extend %smallBlock;
+
+  &__title {
+    @extend %boldText;
+  }
+}

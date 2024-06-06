@@ -1,0 +1,67 @@
+@import "/src/styles/flex";
+@import "/src/styles/text";
+
+.courses {
+  @extend %mainBlock;
+  align-items: center;
+
+  &__title {
+    @extend %mainTitle;
+  }
+
+  &__content {
+    width: min(2000px, 100%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 20px;
+  }
+}
+
+.course {
+  @extend %smallBlock;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: var(--blue);
+  color: var(--white);
+
+  &__title {
+    @extend %semiTitle;
+    color: var(--white);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.info {
+  @extend %smallBlock;
+  justify-content: space-between;
+
+  &__duration {
+    font-size: 14px;
+  }
+
+  &__price {
+    @extend %boldText;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    width: 100%;
+    border-radius: 12px;
+  }
+}

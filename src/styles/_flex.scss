@@ -1,0 +1,17 @@
+%mainBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+%semiBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+%smallBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px
+}

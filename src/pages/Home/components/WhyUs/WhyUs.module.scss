@@ -1,0 +1,64 @@
+@import "/src/styles/variables";
+@import "/src/styles/text";
+
+.whyUs {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  &__title {
+    @extend %mainTitle;
+    text-align: center;
+    background-color: var(--blue);
+    padding: 16px 20px;
+    color: var(--white);
+    border-radius: 20px;
+  }
+
+  &__mission {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+
+    @media (max-width: $screen-xl) {
+      font-size: 24px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $screen-md) {
+      font-size: 18px;
+    }
+  }
+
+  &__options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+  }
+}
+
+.option {
+  display: flex;
+  gap: 14px;
+
+
+  &__image {
+    height: 50px;
+    width: 50px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: start;
+    font-size: 16px;
+  }
+  &__title {
+    color: var(--blue);
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,62 @@
+@import "/src/styles/variables";
+
+.carousel {
+  width: 100%;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.4;
+  height: fit-content;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 40px;
+  border-radius: 20px;
+  //min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  &__slide {
+    height: 400px !important;
+    display: flex !important;
+    align-items: center;
+
+    img {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $screen-xl) {
+  .text {
+    font-size: 18px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: $screen-lg) {
+  .text {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .carousel {
+    grid-template-columns: 1fr;
+  }
+}
