@@ -1,18 +1,34 @@
+import wom1 from '/public/assets/teachers/wom1.jpg'
+import wom3 from '/public/assets/teachers/wom3.jpg'
+import men1 from '/public/assets/teachers/men1.jpg'
+import men2 from '/public/assets/teachers/men2.jpg'
+import wom2 from '/public/assets/teachers/wom2.jpg'
+import wom4 from '/public/assets/teachers/wom4.jpg'
+import wom5 from '/public/assets/teachers/wom5.jpg'
+import wom6 from '/public/assets/teachers/wom5.jpg'
+import men3 from '/public/assets/teachers/wom5.jpg'
+import wom7 from '/public/assets/teachers/wom5.jpg'
+import wom8 from '/public/assets/teachers/wom5.jpg'
+import men4 from '/public/assets/teachers/wom5.jpg'
+import men5 from '/public/assets/teachers/wom5.jpg'
+import wom10 from '/public/assets/teachers/wom5.jpg'
+import wom9 from '/public/assets/teachers/wom5.jpg'
+
 export const subjectsData = [
     {
         title: 'Курса "Основы программирования"',
         teachers: [
             {
                 name: 'Бядова Майя Владимировна',
-                img: '/public/assets/teachers/wom1.jpg'
+                img: wom1
             },
             {
                 name: 'Тропина Татьяна Николаевна',
-                img: '/public/assets/teachers/wom3.jpg'
+                img: wom3
             },
             {
                 name: 'Древин Владислав Владимирович',
-                img: '/public/assets/teachers/men1.jpg'
+                img: men1
             },
         ]
     },
@@ -21,15 +37,15 @@ export const subjectsData = [
         teachers: [
             {
                 name: 'Беляев Василий Иванович',
-                img: '/public/assets/teachers/men2.jpg'
+                img: men2
             },
             {
                 name: 'Макарова Нина Ильинична',
-                img: '/public/assets/teachers/wom2.jpg'
+                img: wom2
             },
             {
                 name: 'Созонова Ольга Ярославовна',
-                img: '/public/assets/teachers/wom4.jpg'
+                img: wom4
             },
         ]
     },
@@ -38,15 +54,15 @@ export const subjectsData = [
         teachers: [
             {
                 name: 'Кучеревская Марина Олеговна',
-                img: '/public/assets/teachers/wom5.jpg'
+                img: wom5
             },
             {
                 name: 'Рудакова Елена Алексеевна',
-                img: '/public/assets/teachers/wom6.jpg'
+                img: wom6
             },
             {
                 name: 'Классов Александр Борисович',
-                img: '/public/assets/teachers/men3.jpg'
+                img: men3
             },
         ]
     },
@@ -55,15 +71,15 @@ export const subjectsData = [
         teachers: [
             {
                 name: 'Кузьмичева Татьяна Николаевна',
-                img: '/public/assets/teachers/wom7.jpg'
+                img: wom7
             },
             {
                 name: 'Ковшова Юлия Николаевна',
-                img: '/public/assets/teachers/wom8.jpeg'
+                img: wom8
             },
             {
                 name: 'Русецкий Алексей Валерьевич',
-                img: '/public/assets/teachers/men4.jpg'
+                img: men4
             },
         ]
     },
@@ -72,15 +88,15 @@ export const subjectsData = [
         teachers: [
             {
                 name: 'Шрайнер Борис Александрович',
-                img: '/public/assets/teachers/men5.jpg'
+                img: men5
             },
             {
                 name: 'Гудкова Татьяна Викторовна',
-                img: '/public/assets/teachers/wom10.jpg'
+                img: wom10
             },
             {
                 name: 'Некрасова Ирина Ивановна',
-                img: '/public/assets/teachers/wom9.jpg'
+                img: wom9
             },
         ]
     },

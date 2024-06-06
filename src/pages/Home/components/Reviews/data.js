@@ -1,6 +1,12 @@
+import andrey from "/public/assets/Andry.png"
+import alla from "/public/assets/Alla.png"
+import luda from "/public/assets/Luda.png"
+import mikhail from "/public/assets/Mikhail.png"
+import alex from "/public/assets/Alex.png"
+
 export const reviewsData = [
     {
-        image: 'Andry.png',
+        image: andrey,
         name: 'Андрей Жураков',
         course: 'Основы программирования',
         description: 'Три года учусь в онлайн-школе и выбираю курсы Скиллбокс, на сегодняшний день мой\n' +
@@ -13,7 +19,7 @@ export const reviewsData = [
             '                                материалам навсегда.',
     },
     {
-        image: 'Alla.png',
+        image: alla,
         name: 'Алла Комиссаренко',
         course: 'Digital-маркетинг',
         description: 'На лекциях по знакомству с языками программирования крайне хотелось бы более\n' +
@@ -25,7 +31,7 @@ export const reviewsData = [
             '                                объясняют о данном обучении.',
     },
     {
-        image: 'Luda.png',
+        image: luda,
         name: 'Людмила Юрченко',
         course: 'Фотография и обработка изображений',
         description: 'Я очень довольна курсом "Фотография и обработка изображений". Преподаватели отлично\n' +
@@ -37,7 +43,7 @@ export const reviewsData = [
             '                                это благодаря данному курсу.',
     },
     {
-        image: 'Mikhail.png',
+        image: mikhail,
         name: 'Михаил Зеркаль',
         course: 'Финансовая грамотность',
         description: 'Пройдя курс "Финансовая грамотность", я получил невероятно ценные знания и навыки,\n' +
@@ -49,7 +55,7 @@ export const reviewsData = [
             '                                анализировали реальные финансовые ситуации.',
     },
     {
-        image: 'Alex.png',
+        image: alex,
         name: 'Александра Демина',
         course: 'Английский язык для делового общения',
         description: ' Очень нравится четкая, грамотная программа курса, занятия всегда на высоте,\n' +

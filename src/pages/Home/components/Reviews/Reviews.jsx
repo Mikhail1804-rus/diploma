@@ -33,7 +33,7 @@ function Reviews(props) {
                         <SwiperSlide className={s.swiper__slide}>
                             <div className={s.reviewItem}>
                                 <div className={s.reviewItem__avatar}>
-                                    <img src={"/public/assets/" + review.image} alt=""/>
+                                    <img src={review.image} alt=""/>
                                 </div>
                                 <div className={s.reviewItem__content}>
                                     <div className={s.header}>

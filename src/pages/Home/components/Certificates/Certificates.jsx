@@ -9,8 +9,7 @@ function Certificates(props) {
         <div className={s.certificates}>
             {
                 certificatesImages.length && certificatesImages.map(image => (
-                    <img className={s.certificates__item} src={"/public/assets/" + image} alt=""/>
-
+                    <img className={s.certificates__item} src={image} alt=""/>
                 ))
             }
         </div>

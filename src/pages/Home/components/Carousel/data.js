@@ -1,1 +1,5 @@
-export const slidesImagesData = ['rrr2.jpg', 'ss5.jpg', 'gg3.png']
+import first from '/public/assets/rrr2.jpg'
+import second from '/public/assets/ss5.jpg'
+import third from '/public/assets/gg3.png'
+
+export const slidesImagesData = [first, second, third]

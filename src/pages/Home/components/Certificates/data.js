@@ -1,12 +1,23 @@
+import first from "/public/assets/serf1.jpg"
+import second from "/public/assets/serf1.jpg"
+import third from "/public/assets/serf1.jpg"
+import fourth from "/public/assets/serf1.jpg"
+import fifth from "/public/assets/serf1.jpg"
+import sixth from "/public/assets/serf1.jpg"
+import seventh from "/public/assets/serf1.jpg"
+import eights from "/public/assets/serf1.jpg"
+import ninth from "/public/assets/serf1.jpg"
+import tenth from "/public/assets/serf1.jpg"
+
 export const certificatesImagesData = [
-    'serf1.jpg',
-    'serf2.jpg',
-    'serf3.jpg',
-    'serf4.jpg',
-    'serf5.png',
-    'serf6.jpg',
-    'serf7.jpg',
-    'serf8.jpg',
-    'serf9.jpg',
-    'serf10.jpg',
+    first,
+    second,
+    third,
+    fourth,
+    fifth,
+    sixth,
+    seventh,
+    eights,
+    ninth,
+    tenth,
 ];
