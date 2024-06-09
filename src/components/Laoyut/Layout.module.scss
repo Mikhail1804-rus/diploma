@@ -95,12 +95,19 @@
     font-size: 14px;
   }
 
-  &:hover {
-    background-color: var(--white);
-    color: var(--black);
+  &:not(.link_noHover) {
+    &:hover {
+      background-color: var(--white);
+      color: var(--black);
+    }
   }
 }
 
 .main {
   padding: 20px 16px;
+}
+
+.active {
+  background-color: var(--white);
+  color: var(--black);
 }
