@@ -1,11 +1,25 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import s from "./Reviews.module.scss";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination} from "swiper/modules";
-import {reviewsData} from "./data.js";
+import {reviewsPhotosData} from "./data.js";
 
 function Reviews(props) {
-    const reviews = reviewsData
+    const reviewsPhotos = reviewsPhotosData
+    const [reviews, setReviews] = useState([]);
+
+    const url = 'http://localhost:3000/api/reviews/getList'
+
+    useEffect(() => {
+        fetch(url)
+            .then(response => response.json())
+            .then(data => setReviews(data.map(review => {
+                review.image = reviewsPhotos.find(photo => photo.id === review.id)?.image ?? '';
+
+                return review
+            })))
+            .catch(err => console.error(err));
+    }, []);
 
     return (
         <div className={s.reviews}>
