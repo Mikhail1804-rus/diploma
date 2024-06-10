@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import s from './Courses.module.scss'
-import {coursesData} from "./data.js";
+import {coursesPhotosData} from "./data.js";
 
 function Courses (props) {
-    const courses = coursesData
+    const coursesPhotos = coursesPhotosData
+    const [courses, setCourses] = useState([]);
+
+    const url = 'http://localhost:3000/api/courses/getList'
+
+    useEffect(() => {
+        fetch(url)
+            .then(response => response.json())
+            .then(data => setCourses(data.map(review => {
+                review.banner = coursesPhotos.find(photo => photo.id === review.id)?.banner ?? '';
+
+                return review
+            })))
+            .catch(err => console.error(err));
+    }, []);
 
     return (
         <div className={s.courses}>

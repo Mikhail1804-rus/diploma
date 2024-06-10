@@ -4,6 +4,29 @@ import photo from '/public/assets/courses/photo.jpg'
 import financials from '/public/assets/courses/financials.jpeg'
 import english from '/public/assets/courses/english.jpg'
 
+export const coursesPhotosData = [
+    {
+        id: 1,
+        banner: basics,
+    },
+    {
+        id: 2,
+        banner: digital,
+    },
+    {
+        id: 3,
+        banner: photo,
+    },
+    {
+        id: 4,
+        banner: financials,
+    },
+    {
+        id: 5,
+        banner: english,
+    },
+]
+
 export const coursesData = [
     {
         title: 'Основы программирования',
